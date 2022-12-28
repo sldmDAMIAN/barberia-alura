@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contacto</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-div contenedor">
+        <div class="logo-header">
+          <a href="/">
+            <img src="img/logo.png" alt="Imagen de logo" />
+          </a>
+        </div>
+
+        <div class="nav-header">
+          <nav class="navegacion">
+            <a class="enlace" href="index.html">Home</a>
+            <a class="enlace" href="productos.html">Productos</a>
+            <a class="enlace" href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="principal contenedor">
+      <h1 class="titulo centrar-texto">Contacto</h1>
+
+      <form class="formulario centrar-texto" action="">
+        <div class="campo">
+          <label class="label" for="servicio">Servicio</label>
+          <input
+            class="input"
+            type="text"
+            id="servicio"
+            placeholder="Cual servicio quieres"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label class="label" for="email">Correo electrónico</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            placeholder="Ingresa tu correo electronico"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label class="label" for="telefono">Telefono</label>
+          <input
+            class="input"
+            type="tel"
+            id="telefono"
+            placeholder="(XX) xxxx-xxxx"
+            required
+          />
+        </div>
+
+        <div class="campo">
+          <label class="label" for="mensaje">Mensaje</label>
+          <textarea
+            class="txtArea"
+            name="mensaje"
+            id="mensaje"
+            required
+          ></textarea>
+        </div>
+
+        <fieldset>
+          <legend>¿Como desea ser contactado?</legend>
+          <div class="radio">
+            <div class="campo">
+              <input type="radio" name="contacto" id="correo" />
+              <label class="label" for="correo">Email</label>
+            </div>
+
+            <div class="campo">
+              <input type="radio" name="contacto" id="telef" />
+              <label class="label" for="telef">Telefono</label>
+            </div>
+
+            <div class="campo">
+              <input type="radio" name="contacto" id="whatsapp" checked />
+              <label class="label" for="whatsapp">WhatsApp</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>¿Cual horario prefieres?</legend>
+          <div class="campo">
+            <select class="select">
+              <option value="" disabled selected>
+                --Seleccione una Opcion--
+              </option>
+              <option value="mañana">Mañana</option>
+              <option value="tarde">Tarde</option>
+              <option value="noche">Noche</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <div class="campo chkb">
+          <input type="checkbox" name="si" id="chk" checked />
+          <label class="label" for="chk"
+            >¿Le gustaria recibir novedades por correo electronico?</label
+          >
+        </div>
+
+        <div class="btn">
+          <input
+            class="btnEnviar"
+            id="btnEnviar"
+            type="submit"
+            value="Enviar Formulario"
+          />
+        </div>
+      </form>
+
+      <table class="tabla centrar-texto">
+        <thead>
+          <tr class="trTable">
+            <th class="thTable">Día</th>
+            <th class="thTable">Horario</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="trTable">
+            <td class="tdTable">Lunes</td>
+            <td class="tdTable">08:00 - 20:00</td>
+          </tr>
+
+          <tr class="trTable">
+            <td class="tdTable">Miercoles</td>
+            <td class="tdTable">08:00 - 20:00</td>
+          </tr>
+
+          <tr class="trTable">
+            <td class="tdTable">Viernes</td>
+            <td class="tdTable">08:00 - 20:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer class="footer centrar-texto">
+      <a href="/">
+        <img src="img/logo-blanco.png" alt="Logo en Blanco" />
+      </a>
+
+      <p class="footer-desc">
+        Todos los derechos reservados | &copy;
+        <a class="enlace-footer" href="https://www.facebook.com/DevIncSide"
+          >DevIncSide</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
